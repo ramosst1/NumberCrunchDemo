@@ -1,0 +1,75 @@
+﻿@model NumberCrunchDemo.Models.NumberCrunchModel
+
+@{
+  ViewData["Title"] = "Number Crunch";
+}
+
+<h4 >Number Crunch</h4>
+<hr />
+<div class="row">
+  <div class="col-md-2">
+    <form asp-action="NumberCrunchStep2" enctype="multipart/form-data">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+      <table width="100%">
+        <tr>
+          <td class="text-right align-text-top">
+            <label asp-for="SampleMaxCount" class="control-label">Sample Max Count</label>
+
+          </td>
+          <td>
+            <div class="form-group">
+              <input asp-for="SampleMaxCount" class="form-control" placeholder="Enter Maximum Sample Count" min="1" />
+              <span asp-validation-for="SampleMaxCount" class="text-danger"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-right  align-text-top">
+            <label asp-for="PatientScore" class="control-label">Patient Score</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <input asp-for="PatientScore" class="form-control" placeholder="Enter Patient Score" min="1" />
+              <span asp-validation-for="PatientScore" class="text-danger"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-right align-text-top">
+            <label asp-for="DoctorScore" class="control-label">Doctor Score</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <input asp-for="DoctorScore" class="form-control" placeholder="Enter Doctor Score" min="1" />
+              <span asp-validation-for="DoctorScore" class="text-danger"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-right  align-text-top" style="white-space:nowrap">
+            <span  style="background-color:darkorange">(Optional)</span> <label asp-for="UploadMessage" class="control-label">Upload Message</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <input type="file" id="fileUpload" name="fileUpload" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center">
+            <div class="form-group">
+              <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+          </td>
+          <td>
+
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+@section Scripts {
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

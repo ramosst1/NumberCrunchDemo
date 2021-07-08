@@ -1,0 +1,11 @@
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\bin\Debug\net5.0\NumberCrunchApi.deps.json
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\bin\Debug\net5.0\NumberCrunchApi.dll
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\bin\Debug\net5.0\ref\NumberCrunchApi.dll
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\bin\Debug\net5.0\NumberCrunchApi.pdb
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\obj\Debug\net5.0\NumberCrunchApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\obj\Debug\net5.0\NumberCrunchApi.AssemblyInfoInputs.cache
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\obj\Debug\net5.0\NumberCrunchApi.AssemblyInfo.cs
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\obj\Debug\net5.0\NumberCrunchApi.csproj.CoreCompileInputs.cache
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\obj\Debug\net5.0\NumberCrunchApi.dll
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\obj\Debug\net5.0\ref\NumberCrunchApi.dll
+C:\SampleCode\NumberCrunchDemo\NumberCrunchApi\obj\Debug\net5.0\NumberCrunchApi.pdb

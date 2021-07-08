@@ -1,0 +1,74 @@
+﻿@*@model IEnumerable<NumberCrunchDemo.Models.NumberCruncherCalculatorItemModel>*@
+@model dynamic
+
+@{
+  ViewData["Title"] = "Number Crunch Results";
+}
+
+<h4>Number Crunch</h4>
+<table style="width:100%">
+  <tr>
+    <td class="text-left">
+      <input type="button" value="View" class="btn btn-primary" />
+    </td>
+    <td class="text-right">
+      <div>
+        @*<a asp-action="Index">Back to List</a>*@
+        <input type="button" asp-page="Index" value="Go Back" class="btn btn-primary" onclick="window.location='@Url.Action("Index")'" />
+      </div>
+    </td>
+  </tr>
+</table>
+<div class="row">
+  <div class="col-md-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            Sample #
+          </th>
+          <th>
+            Score
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (NumberCruncherCalculatorItemModel item in Model.NumberCruncherCalculatorItems)
+        {
+          <tr>
+            <td>
+              @Html.DisplayFor(modelItem => item.SampleNumber)
+            </td>
+            <td>
+              @Html.DisplayFor(modelItem => item.Score)
+            </td>
+          </tr>
+        }
+      </tbody>
+
+    </table>
+
+  </div>
+  <div class="col-md-4">
+    <table style="width:100%">
+      <tr>
+        <td class="align-top">
+        </td>
+        <td class="align-top">
+          <table style="width:100%">
+            <tr>
+              <th class="table-primary">
+                Message
+              </th>
+            </tr>
+            <tr>
+              <td>
+                @Model.NumberCrunchModel.UploadMessage
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
